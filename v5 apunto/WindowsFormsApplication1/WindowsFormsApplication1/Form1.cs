@@ -16,17 +16,39 @@ namespace WindowsFormsApplication1
     {
         Socket server;
         Thread atender;
-        
 
+        delegate void DelegadoParaEscribir(string mensaje);
         public Form1()
         {
             InitializeComponent();
-            CheckForIllegalCrossThreadCalls = false; //Necesario para que los elementos de los formularios puedan ser
+            //CheckForIllegalCrossThreadCalls = false; //Necesario para que los elementos de los formularios puedan ser
             //accedidos desde threads diferentes a los que los crearon
             //dataGridView1.RowCount = 10;
             dataGridView1.ColumnCount = 1;
+            richTextBox1.Visible = false;
+            MensajeaEnviar.Visible = false;
+            EnviarMensaje.Visible = false;
+            invitarbutton.Visible = false;
+            Invitado.Visible = false;
+            InvitadoTB.Visible = false;
         }
+        public void EscribirenChat(string mensaje)
+        {
+            richTextBox1.AppendText(mensaje + "\n");
+        }
+        public void ActualizarListaConectados(string mensaje)
+        {
+            string[] sConectados = mensaje.Split(',');
+            int n = Convert.ToInt32(sConectados[0]);
+            dataGridView1.RowCount = n;
 
+            int j = 1;
+            for (int i = 0; i < n; i++)
+            {
+                dataGridView1[0, i].Value = sConectados[j];
+                j++;
+            }
+        }
         private void AtenderServidor ()
         {
             while (true)
@@ -48,6 +70,7 @@ namespace WindowsFormsApplication1
 
                     case 2:
                         MessageBox.Show(mensaje);
+                        //MessageBox.Show("probando", "no probando", MessageBoxButtons.YesNo);
                         break;
 
                     case 3:
@@ -94,30 +117,60 @@ namespace WindowsFormsApplication1
                         break;
                     
                     case 7:
-                        //Actualizar lista de conectados
-                        //string[] nConectados = mensaje.Split(',');
-                        //int a = Convert.ToInt32(nConectados[0]);
-
-                        //dataGridView1.RowCount = a;
-                        ////dataGridView1.ColumnCount = 1;
-                      
-                        //for (int i = 1; i <= a; i++)
-                        //{
-                        //    dataGridView1.Rows.Add(nConectados[i]);
-                        //}
-                         string[] sConectados = mensaje.Split(',');
-                                int n = Convert.ToInt32(sConectados[0]);
-                            dataGridView1.RowCount = n;
+                         //string[] sConectados = mensaje.Split(',');
+                         //       int n = Convert.ToInt32(sConectados[0]);
+                         //   dataGridView1.RowCount = n;
                            
-                            int j = 1;
-                            for (int i = 0; i < n; i++)
-                            {
-                                dataGridView1[0, i].Value = sConectados[j];
-                                j++;
-                            }
+                         //   int j = 1;
+                         //   for (int i = 0; i < n; i++)
+                         //   {
+                         //       dataGridView1[0, i].Value = sConectados[j];
+                         //       j++;
+                         //   }
+                        DelegadoParaEscribir delegado = new DelegadoParaEscribir(ActualizarListaConectados);
+                        dataGridView1.Invoke(delegado, new object[] { mensaje });
                         break;
 
-                
+                    case 8:
+                        //if(mensaje == "error")
+                        //{
+                        //    MessageBox.Show("No se ha podido invitar al usuario");
+                        //}
+                        //else
+                        //{  
+                            string[] invit = mensaje.Split(',');
+                            int n = Convert.ToInt32(invit[1]);
+                            var result = MessageBox.Show(invit[0] + " te ha invitado, aceptas?"," Nueva invitacion ",MessageBoxButtons.YesNo);
+                            //MessageBox.Show("probando", "no probando", MessageBoxButtons.YesNo);
+                            if (result == DialogResult.Yes)
+                            {
+                                string respuesta = "9/SI/" + Usuario.Text + "/" + invit[0] + "/" + n  ;
+
+                                byte[] msg = System.Text.Encoding.ASCII.GetBytes(respuesta);
+                                server.Send(msg);
+                                //richTextBox1.Visible = true;
+                                //MensajeaEnviar.Visible = true;
+                                //EnviarMensaje.Visible = true;
+                            }
+                            else
+                            {
+                                string respuesta = "9/NO/" + Usuario.Text + "/" + invit[0] + n;
+
+                                byte[] msg = System.Text.Encoding.ASCII.GetBytes(respuesta);
+                                server.Send(msg);
+
+                            }
+                          
+                        //}
+                        break;
+                    case 9:
+                        MessageBox.Show(mensaje);
+                        break;
+
+                    case 10:
+                        DelegadoParaEscribir delegado2 = new DelegadoParaEscribir(EscribirenChat);
+                        richTextBox1.Invoke(delegado2, new object[] { mensaje });
+                        break;
                 }
             }
         }
@@ -134,7 +187,7 @@ namespace WindowsFormsApplication1
                 //al que deseamos conectarnos
                 IPAddress direc = IPAddress.Parse("192.168.56.102");
                 //IPAddress direc = IPAddress.Parse("147.83.117.22");
-                IPEndPoint ipep = new IPEndPoint(direc, 9200);
+                IPEndPoint ipep = new IPEndPoint(direc, 50083);
                 this.BackColor = Color.Red;
 
 
@@ -158,28 +211,7 @@ namespace WindowsFormsApplication1
                 byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
                 server.Send(msg);
 
-                ////Recibimos la respuesta del servidor
-                //byte[] msg2 = new byte[80];
-                //server.Receive(msg2);
-                //mensaje = Encoding.ASCII.GetString(msg2).Split('\0')[0];
-                //if (mensaje == "NO")
-                //{
-
-                //    string mennsaje = "0/" + Usuario.Text;
-
-                //    byte[] msg3 = System.Text.Encoding.ASCII.GetBytes(mennsaje);
-                //    server.Send(msg3);
-                    
-                //    this.BackColor = Color.Red;
-                    
-                //    MessageBox.Show("No se ha iniciado sesion correctamente ");
-                   
-                
-                //}
-                //else
-                //{
-                //    MessageBox.Show("Se ha podido iniciar sesion");
-                //}
+               
                
                 //pongo en marcha el thread que atenderá los mensajes del servidor
                 ThreadStart ts = delegate { AtenderServidor(); };
@@ -353,19 +385,19 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string mensaje = "6/";
-            // Enviamos al servidor el nombre tecleado
-            byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
-            server.Send(msg);
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    string mensaje = "6/";
+        //    // Enviamos al servidor el nombre tecleado
+        //    byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
+        //    server.Send(msg);
 
-            //Recibimos la respuesta del servidor
-            byte[] msg2 = new byte[80];
-            server.Receive(msg2);
-            mensaje = Encoding.ASCII.GetString(msg2).Split('\0')[0];
-            contl.Text = mensaje;
-        }
+        //    //Recibimos la respuesta del servidor
+        //    byte[] msg2 = new byte[80];
+        //    server.Receive(msg2);
+        //    mensaje = Encoding.ASCII.GetString(msg2).Split('\0')[0];
+        //    contl.Text = mensaje;
+        //}
 
         //private void button2_Click(object sender, EventArgs e)
         //{
@@ -388,7 +420,90 @@ namespace WindowsFormsApplication1
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
 
+        private void contl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void invitarbutton_Click(object sender, EventArgs e)
+        {
+            string invitados = null;
+            int i = 0;
+            bool invito = false;
+            int numinvitados = dataGridView1.SelectedCells.Count;
+            while (i < dataGridView1.Rows.Count)
+            {
+                if (dataGridView1.Rows[i].Cells[0].Selected)
+                {
+                    if (dataGridView1.Rows[i].Cells[0].Value == null)
+                    {
+                        MessageBox.Show("No has seleccionado a ningun jugador");
+                        invito = false;
+                        break;
+                    }
+                    else if (dataGridView1.Rows[i].Cells[0].Value.ToString() == Usuario.Text)
+                    {
+                        MessageBox.Show("Te estas invitando a ti mismo");
+                        invito = false;
+                        break;
+                    }
+                    else
+                    {
+                        invitados = invitados + ",";
+                        invitados = invitados + dataGridView1.Rows[i].Cells[0].Value.ToString();
+                        i = i + 1;
+                        invito = true;
+                    }
+                }
+                else
+                {
+                    i = i + 1;
+                }
+
+            }
+
+            if (invito == true)
+            {
+                string mensaje = "8/" + Usuario.Text + "," + Convert.ToString(numinvitados) + invitados;
+                // Enviamos al servidor el nombre introducido
+                byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
+                server.Send(msg);
+
+                MessageBox.Show("Has invitado a los jugadores, esperando a que acepten" + invitados);
+            }
+            
+            ////List<string> invitados = new List<string>();
+            //string[] colorsArray = new string[4]
+            //string mensaje = "8/" + Usuario.Text + "," + dataGridView1.SelectedCells.ToString() + ",";
+            //// Enviamos al servidor el nombre tecleado
+            //byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
+            //server.Send(msg);
+        }
+
+        private void EnviarMensaje_Click(object sender, EventArgs e)
+        {
+            string mensaje = "10/" + Usuario.Text +": " +MensajeaEnviar.Text + "/";
+            MensajeaEnviar.Clear();
+            // Enviamos al servidor el nombre tecleado
+            byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
+            server.Send(msg);  
+        }
+
+        private void MensajeaEnviar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CrearPartida_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Visible = true;
+            MensajeaEnviar.Visible = true;
+            EnviarMensaje.Visible = true;
+            invitarbutton.Visible = true;
+            Invitado.Visible = true;
+            InvitadoTB.Visible = true;
         }
 
 
