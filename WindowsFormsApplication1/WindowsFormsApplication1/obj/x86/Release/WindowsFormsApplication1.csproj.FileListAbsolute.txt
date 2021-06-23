@@ -1,0 +1,52 @@
+C:\Users\ingri\Downloads\V6 (3)\V6\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\ingri\Downloads\V6 (3)\V6\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form2.resources
+C:\Users\ingri\Downloads\V6 (3)\V6\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ingri\Downloads\V6 (3)\V6\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\ingri\Downloads\V6 (3)\V6\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\Downloads\V6 (3)\V6\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\Downloads\V6 (3)\V6\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\Downloads\V6 (3)\V6\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\Universitat\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\OneDrive\Escritorio\Universitat\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\Universitat\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form2.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\ingri\OneDrive\Escritorio\Universitat\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\OneDrive\Escritorio\Universitat\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form2.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form2.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form3.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\OneDrive\Escritorio\Universitat\Diumenge 20\Versionunpoqitomasavanzada (2)\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form2.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form3.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
+C:\Users\ingri\OneDrive\Escritorio\Universitat\1A\Versionunpoqitomasavanzada\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb
+C:\Users\ingri\OneDrive\Escritorio\PROYECTO FINAL\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\ingri\OneDrive\Escritorio\PROYECTO FINAL\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\ingri\OneDrive\Escritorio\PROYECTO FINAL\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form2.resources
+C:\Users\ingri\OneDrive\Escritorio\PROYECTO FINAL\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form3.resources
+C:\Users\ingri\OneDrive\Escritorio\PROYECTO FINAL\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\ingri\OneDrive\Escritorio\PROYECTO FINAL\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\ingri\OneDrive\Escritorio\PROYECTO FINAL\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
